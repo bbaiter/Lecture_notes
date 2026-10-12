@@ -13,6 +13,7 @@ class Fraction:
     # numerator   -- числитель
     # пока без float
     # constructor
+
     def __init__(self, numerator, denominator = 1):
         if not (isinstance(numerator,int) and isinstance(denominator,int)):
             raise TypeError("Введенные числитель и знаменатель должны быть целыми")
@@ -151,7 +152,6 @@ def __ge__(self, other):    >=
 def __bool__(self):         bool(Fraction)
 def __str__(self):          info for users
 def __repr__(self)          info for devs
-def __len__(self)           ???
 def __call__(self, *args, **kwargs)
 
 '''
